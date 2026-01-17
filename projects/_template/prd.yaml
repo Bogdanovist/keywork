@@ -1,0 +1,19 @@
+# Project Requirements Document Template
+#
+# Placeholder: Copy this file when creating a new project.
+
+# Intended structure:
+# name: project-name
+# description: What this project implements
+# repos:                            # Which repos this project operates on
+#   - repo-name
+# requirements:                     # List of requirements to implement
+#   - id: REQ-001
+#     description: First requirement
+#     status: pending               # pending | in_progress | completed
+#   - id: REQ-002
+#     description: Second requirement
+#     status: pending
+# acceptance_criteria:              # How to know when we're done
+#   - All tests pass
+#   - Feature works as described
