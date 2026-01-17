@@ -1,0 +1,11 @@
+# Keywork .gitignore
+
+# Ignore workspace folders (checked out repos)
+repos/*/workspace/*
+!repos/*/workspace/.gitkeep
+
+# Ignore verbose logs
+projects/*/logs/*.log
+
+
+.claude
