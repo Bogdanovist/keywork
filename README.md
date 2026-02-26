@@ -1,12 +1,10 @@
-╔══════════════════════════════════╗
-║   KEYWORK — Code Weaving Engine  ║
-╚══════════════════════════════════╝
 ![Keywork](assets/cover.png)
 
+# Keywork
 
-# keywork
 The connective tissue between intent and implementation.
 
-In The Amory Wars universe, the Keywork is the energy lattice that binds the worlds together — the substrate through which thought, matter, and communication flow. Whoever learns to shape the Keywork can reshape reality itself.
+Keywork is an autonomous coding platform that manages development of any repository through plan-build-iterate agent loops. It separates the agent system from the code it develops — Keywork orchestrates, working repos receive the commits.
 
-This project borrows that metaphor. Keywork is an autonomous coding agent framework designed to sit between human intent and implemented software — a connective layer that interprets goals, executes iterative development loops, and evolves solutions until they hold together. A fabric between idea and execution.
+- **Agents**: See [CLAUDE.md](CLAUDE.md) for agent reference and conventions
+- **Humans**: See [HUMANS.md](HUMANS.md) for setup, workflow, and directory guide

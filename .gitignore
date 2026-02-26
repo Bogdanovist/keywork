@@ -1,11 +1,35 @@
 # Keywork .gitignore
 
-# Ignore workspace folders (checked out repos)
-repos/*/workspace/*
-!repos/*/workspace/.gitkeep
+# Working repos (cloned, never committed to keywork)
+workspace/*
+!workspace/.gitkeep
 
-# Ignore verbose logs
-projects/*/logs/*.log
+# Session logs and verbose output
+agents/goals/*/session.log
+*.log
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+uv.lock
 
+# Environment
+.env
+.venv/
+venv/
+
+# Claude
 .claude
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store

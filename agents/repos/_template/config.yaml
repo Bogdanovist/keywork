@@ -1,0 +1,45 @@
+# Keywork Repo Configuration
+# ─────────────────────────────────────────────────────────────
+# This file is created by repo_init.sh and refined by the
+# repo initialization agent during interactive onboarding.
+
+# ── Identity ──────────────────────────────────────────────
+name: ""                              # Display name (matches directory name)
+remote: ""                            # Git remote URL
+branch: main                          # Default branch for agent commits
+path: ""                              # Relative path from keywork root (e.g., workspace/my-project)
+priority: normal                      # low | normal | high | urgent — feeds orchestrator scoring
+
+# ── Language & Framework ──────────────────────────────────
+language: ""                          # Primary language (python, javascript, go, rust, etc.)
+framework: ""                         # Primary framework (optional: fastapi, nextjs, rails, etc.)
+package_manager: ""                   # pip, uv, npm, yarn, pnpm, cargo, go, bundler, etc.
+
+# ── Commands ──────────────────────────────────────────────
+# Commands the build agent runs for checks. All paths relative to workspace dir.
+# Leave empty to skip a check.
+checks:
+  lint: ""
+  test: ""
+  typecheck: ""
+  build: ""
+
+# ── Directory Map ─────────────────────────────────────────
+# Brief descriptions of key directories (helps agents navigate)
+directories: {}
+
+# ── Sandbox Configuration ─────────────────────────────────
+sandbox:
+  env_vars: []                        # Extra env vars to pass into sandbox
+  volumes: []                         # Extra volume mounts (host:container)
+  ports: []                           # Ports to forward
+  setup_commands: []                  # Run after clone, before agent
+
+# ── Skills ────────────────────────────────────────────────
+# Repo-specific skills supplement bundled skills.
+# Files live in agents/repos/{name}/skills/{skill}.md
+skills: []
+
+# ── State ─────────────────────────────────────────────────
+initialized: false
+registered: ""
